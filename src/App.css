@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  font-family: 'Inter', 'Cantarell', 'Roboto', 'Oxygen', 'Ubuntu', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+}
+
+
+* {
+  transition-property: background-color, color, border-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 200ms;
+  box-sizing: border-box;
+}
+
+
+.CoursesText {
+  margin-top: 20px;
+  font-size: 23px;
+  padding-bottom: 20px;
+}
+
+.shadow-block-course {
+  box-shadow: 1px 1px 3px 3px hsl(243, 75%, 59%, 15%);
+  border-radius: 5px;
+}
+
+
+body {
+  margin: 0;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+.label {
+  text-overflow: clip;
+  white-space: nowrap;
+  overflow-x: auto;
+  scrollbar-width: thin;
+}
+
+.disabled {
+  opacity: 0.8;
+  cursor: not-allowed;
+}
+
+.hoverable {
+  transition: opacity 300ms;
+}
+
+.hoverable:hover {
+  opacity: 0.75;
+}
+
+/* custom scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+	background-color: #9ca3af;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background-color: #6b7280;
+}
+
+@media (prefers-reduced-motion) {
+  * {
+    transition: none !important;
+  }
+}

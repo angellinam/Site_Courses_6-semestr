@@ -1,12 +1,12 @@
 # Site_Courses_6-semestr
 
-#Інструкція \
+#Інструкція \\
 npm install \
 Go to src/firbaseConfig.js and paste you config \
 npm start
 
 
-
+\\
 #Ключові можливості користувача сайту:
  - Реєстрація
  - Додавання курсів: назва курсу, посилання на фон-бекграунд та опис.\
